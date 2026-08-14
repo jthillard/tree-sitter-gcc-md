@@ -1,0 +1,260 @@
+[
+  {
+    "type": "expression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "cpp",
+        "named": true
+      },
+      {
+        "type": "ident",
+        "named": true
+      },
+      {
+        "type": "ident_with_mode",
+        "named": true
+      },
+      {
+        "type": "list",
+        "named": true
+      },
+      {
+        "type": "number",
+        "named": true
+      },
+      {
+        "type": "string",
+        "named": true
+      },
+      {
+        "type": "string_plain",
+        "named": true
+      },
+      {
+        "type": "vector",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "cpp",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ident",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ident_with_mode",
+    "named": true,
+    "fields": {
+      "ident": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      },
+      "mode": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {
+      "ubexpr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "cpp",
+            "named": true
+          },
+          {
+            "type": "ident",
+            "named": true
+          },
+          {
+            "type": "ident_with_mode",
+            "named": true
+          },
+          {
+            "type": "list",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "string_plain",
+            "named": true
+          },
+          {
+            "type": "vector",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "string_content",
+          "named": true
+        },
+        {
+          "type": "string_escape",
+          "named": true
+        },
+        {
+          "type": "string_template",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string_plain",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "string_content",
+          "named": true
+        },
+        {
+          "type": "string_escape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string_template",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "vector",
+    "named": true,
+    "fields": {
+      "ubexpr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "string_content",
+    "named": true
+  },
+  {
+    "type": "string_escape",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "{@",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

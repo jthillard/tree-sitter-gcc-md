@@ -1,0 +1,45 @@
+{
+  "grammars": [
+    {
+      "name": "gcc_md",
+      "camelcase": "GccMd",
+      "scope": "source.gcc_md",
+      "file-types": [
+        "md"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm",
+      "injection-regex": "^gcc_md$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "GPL-3.0-or-later",
+    "description": "GCC Machine Description grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Pietro Monteiro",
+        "email": "pietro@sociotechnical.xyz"
+      },
+      {
+        "name": "Arsen Arsenović",
+        "email": "arsen@aarsen.me"
+      },
+      {
+        "name": "Julien Thillard",
+        "email": "julien.thillard38@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/jthillard/tree-sitter-gcc-md"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
